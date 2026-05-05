@@ -110,12 +110,3 @@ Jobs use a micromamba/conda environment located at:
 - PLINK2
 
 ---
-
-## Quality Metrics
-
-The pipeline reports the following after generation:
-
-- **Allele frequency correlation** — Pearson correlation between real and synthetic allele frequencies
-- **Genotype frequency error** — Mean absolute error across 0/1/2 genotype frequencies
-- **Hamming distance** — Average per-SNP edit distance between real and synthetic samples
-- **AATS proxy** — Nearest-neighbour distance proxy for authenticity vs. training-set similarity
