@@ -6,6 +6,7 @@ Synthetic genotype generation using VAE and Wasserstein GAN (WGAN-GP) on real po
 The pipeline compresses genotype matrices into PCA space, trains a generative model, and produces synthetic samples that preserve population-level allele frequency distributions.
 
 ## VAE
+The pipeline in the jupyter-notebook CSE-7850_Group17-Final-Project/jobs/genomic_vae_1DCNN.ipynb parses VCF files into unphased SNP arrays, trains the generative VAE model and generate synthetic samples. Also compute PCA on a subset of SNPs for real and synthetic genotypes for each subpopulation.
 
 ---
 
@@ -20,6 +21,7 @@ GGD_CSE-7850/
 │   ├── run_wgan_cpu.sh            # CPU WGAN training job
 │   ├── run_plink_pca_validation.sh# PLINK2 PCA validation job
 │   └── csv_to_parquet.sh          # CSV → Parquet conversion job
+│   └── genomic_vae_1DCNN.ipynb    # CNN-VAE model
 └── src/
     └── WGAN/
         ├── core/
